@@ -99,7 +99,7 @@ function updateFilters() {
         const filterElement = document.createElement('div');
         filterElement.classList.add('filter');
         filterElement.innerHTML = `
-          ${filter} <span class="remove-filter">&times;</span>
+          ${filter} <div class="remove-filter">&times;</div>
         `;
         filterElement.querySelector('.remove-filter').addEventListener('click', () => {
           filters.delete(filter);

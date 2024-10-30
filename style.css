@@ -16,6 +16,7 @@ body {
   }
 
   #filter-box {
+    left:10%;
     position: relative;
     bottom: 50px;
     display: flex;
@@ -24,10 +25,9 @@ body {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
-    margin-left: 20px ;
-    margin-right: 20px;
-    max-width: 1440px;
+    width: 77%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
   }
   
   #filter-box.hidden {
@@ -40,21 +40,24 @@ body {
   }
   
   .filter {
+    display: flex;
+    align-items: center;
     background-color: #eef6f6;
     color: #5ca5a5;
     border: none;
-    border-radius: 5px;
     padding: 5px 10px;
-    margin-right: 10px;
+    margin-right: 50px;
     margin-bottom: 10px;
     font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative;
   }
   
   .clear-filters {
-    background-color: #5ca5a5;
-    color: #fff;
+    background-color: transparent;
+    color: #4c5757;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -62,23 +65,29 @@ body {
   }
   
   .clear-filters:hover {
-    background-color: #2c3e50;
+    color: #5ca5a5;
+    text-decoration: underline;
+   
   }
   
 
   .remove-filter {
+    font-size: 20px;
+    display: flex;
     margin-left: 10px;
     cursor: pointer;
     font-weight: bold;
     color: white;
     background-color: #5ca5a5; 
-    
     padding: 0 6px; 
-
     align-items: center;
     justify-content: center;
     width: 20px; 
-    height: 20px; 
+    height: 23px; 
+    position: absolute; 
+    right: -30px; 
+    top: 50%;
+    top: -0.00000001em;
   }
   
   .remove-filter:hover {
@@ -109,10 +118,13 @@ body {
     
   }
   
-  
-  .job-box.featured {
+  .job-box:hover{
     border-left: 5px solid #5ca5a5;
   }
+  
+  /* .job-box.featured {
+    border-left: 5px solid #5ca5a5;
+  } */
   
   .job-logo img {
     width: 70px;
@@ -157,6 +169,10 @@ body {
     font-size: 18px;
     color: #2b3939;
   }
+
+  .position:hover {
+    color: #5ca5a5;;
+  }
   
   .job-meta {
     display: flex;
@@ -182,7 +198,7 @@ body {
     padding: 5px 10px;
     margin-right: 10px;
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -205,8 +221,9 @@ body {
 
   #header-image {
     background-image: url("./images/bg-header-desktop.svg");
-    width: 100%;
     height: 100%;
+    background-size: cover;
+    
 }
 
   hr {
@@ -238,9 +255,9 @@ body {
  
   .job-logo img {
   
-    position: relative;
-    bottom: 40px;
-    right: 28vw;
+    position: absolute;
+    top: -60px;
+    right: 60vw;
     width: 70px;
     height: inherit;
   }
@@ -258,6 +275,31 @@ body {
   .job-details {
     flex: 1;
     width: 100%;
+    margin-left: 0px;
+  }
+
+
+  #job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 80px;
+  }
+
+
+  #filter-box {
+    left:10%;
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
   }
 
   
